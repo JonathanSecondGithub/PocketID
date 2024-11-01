@@ -184,8 +184,17 @@ p {
   }
 }
 
+/* Mobile-Specific Styling */
 @media (max-width: 768px) {
-  /* Adjust images and layout for smaller screens */
+  /* Ensure image visibility on mobile */
+  .smartphone {
+    display: block !important; /* Ensure image is visible */
+    width: 80%;
+    height: auto;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
   .title-image {
     width: 80%;
     transform: rotate(0);
@@ -205,12 +214,5 @@ p {
   #pricing,
   #testimonials {
     padding: 10% 5%;
-  }
-
-  /* Responsive smartphone image */
-  .smartphone {
-    width: 80%;
-    height: auto;
-    max-width: 250px;
   }
 }
