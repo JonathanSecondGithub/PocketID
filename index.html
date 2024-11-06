@@ -57,6 +57,7 @@
       justify-content: center;
       gap: 20px;
       margin: 20px 0;
+      flex-wrap: wrap;
     }
 
     /* Image Styling */
@@ -100,6 +101,36 @@
 
     .social-links a:hover {
       color: #00a046;
+    }
+
+    /* Responsive Styling for Mobile Devices */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .app-promo {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .app-image {
+        width: 90%; /* Further reduction for smaller screens */
+        max-width: 250px;
+      }
+
+      .download-btn {
+        font-size: 1em;
+        padding: 12px 20px;
+      }
+
+      .social-links a {
+        font-size: 1.2em;
+      }
     }
   </style>
 </head>
