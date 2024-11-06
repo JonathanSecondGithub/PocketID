@@ -50,19 +50,25 @@
       color: #dcdcdc;
     }
 
+    /* Image and Button Container Styling */
+    .app-promo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
     /* Image Styling */
     .app-image {
-      margin: 20px 0;
-      width: 100%;
-      max-width: 350px;
+      width: 80%; /* 20% reduction */
+      max-width: 280px;
       border-radius: 15px;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     }
 
     /* Download Button Styling */
     .download-btn {
-      display: inline-block;
-      margin-top: 20px;
       padding: 15px 30px;
       font-size: 1.2em;
       color: #1e1e1e;
@@ -102,11 +108,11 @@
     <h1>PocketID</h1>
     <p>Your all-in-one digital wallet for cards. With PocketID, easily scan, store, and access your physical cards digitally, anytime and anywhere. Stay organized and secure with a sleek, dark aesthetic designed just for you.</p>
     
-    <!-- App Image Placeholder -->
-    <img src="./images/Home.png" alt="PocketID App Homepage" class="app-image">
-
-    <!-- Download Button -->
-    <a href="#" class="download-btn">Download PocketID</a>
+    <!-- Image and Download Button -->
+    <div class="app-promo">
+      <img src="./images/Home.png" alt="PocketID App Homepage" class="app-image">
+      <a href="#" class="download-btn">Download PocketID</a>
+    </div>
 
     <!-- Social Media Links -->
     <div class="social-links">
