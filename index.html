@@ -5,45 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PocketID - Your Digital Card Wallet</title>
   <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
     body {
       font-family: Arial, sans-serif;
-      background-color: #121212;
+      background-color: #1e1e1e;
       color: #f0f0f0;
-      margin: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 600px;
+      min-height: 100vh;
       padding: 20px;
     }
 
+    /* Container Styling */
+    .container {
+      max-width: 800px;
+      text-align: center;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Title Styling */
     h1 {
-      font-size: 2.5em;
-      margin: 0;
+      font-size: 2.8em;
+      margin-bottom: 15px;
       color: #00c853;
     }
 
+    /* Description Styling */
     p {
       font-size: 1.2em;
       line-height: 1.6;
-      margin-top: 15px;
+      margin: 20px 0;
+      color: #dcdcdc;
     }
 
+    /* Image Styling */
+    .app-image {
+      margin: 20px 0;
+      width: 100%;
+      max-width: 350px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Download Button Styling */
     .download-btn {
       display: inline-block;
-      margin-top: 30px;
-      padding: 15px 25px;
-      font-size: 1em;
-      color: #121212;
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: #1e1e1e;
       background-color: #00c853;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
       text-decoration: none;
       transition: background-color 0.3s;
     }
@@ -51,13 +76,44 @@
     .download-btn:hover {
       background-color: #00a046;
     }
+
+    /* Social Media Links */
+    .social-links {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .social-links a {
+      color: #00c853;
+      text-decoration: none;
+      font-size: 1.4em;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #00a046;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>PocketID</h1>
     <p>Your all-in-one digital wallet for cards. With PocketID, easily scan, store, and access your physical cards digitally, anytime and anywhere. Stay organized and secure with a sleek, dark aesthetic designed just for you.</p>
+    
+    <!-- App Image Placeholder -->
+    <img src="https://via.placeholder.com/350x500" alt="PocketID App Homepage" class="app-image">
+
+    <!-- Download Button -->
     <a href="#" class="download-btn">Download PocketID</a>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
   </div>
 </body>
 </html>
